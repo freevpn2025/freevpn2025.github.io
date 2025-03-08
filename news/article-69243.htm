@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html xml:lang="zh-CN" lang="zh-CN">
+
+<head>
+        <link rel="canonical" href="https://freevpn2025.github.io/news/article-69243.htm" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>浅尝Spring注解开发_Bean生命周期及执行过程_在线工具</title>
+        <meta name="description" content="浅尝Spring注解开发，基于Spring 4.3.12包含Bean生命周期、自定义初始化方法、Debug BeanPostProcessor执行过程及在Spring底层中的应用  浅尝Spring注" />
+        <link rel="icon" href="/assets/website/img/windowsv2ray/favicon.ico" type="image/x-icon"/>
+
+    <meta name="author" content="2025年最新免费VPN 机场订阅节点官网">
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://freevpn2025.github.io/news/article-69243.htm" />
+    <meta property="og:site_name" content="2025年最新免费VPN 机场订阅节点官网" />
+    <meta property="og:title" content="浅尝Spring注解开发_Bean生命周期及执行过程_在线工具" />
+    <meta property="og:image" content="https://freevpn2025.github.io/uploads/20240604/4b4efb7e5c4f2d718df4b84c19cf5f26.webp" />
+        <meta property="og:release_date" content="2025-03-07T06:36:34" />
+    <meta property="og:updated_time" content="2025-03-07T06:36:34" />
+        <meta property="og:description" content="浅尝Spring注解开发，基于Spring 4.3.12包含Bean生命周期、自定义初始化方法、Debug BeanPostProcessor执行过程及在Spring底层中的应用  浅尝Spring注" />
+        
+    <meta name="applicable-device" content="pc,mobile" />
+    <meta name="renderer" content="webkit" />
+    <meta name="force-rendering" content="webkit" />
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta name="robots" content="max-image-preview:large" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="浅尝Spring注解开发_Bean生命周期及执行过程_在线工具">
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="dns-prefetch" href="https:/www.googletagmanager.com">
+    <link rel="dns-prefetch" href="https://www.googleadservices.com">
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+    <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com">
+    <link rel="dns-prefetch" href="https://cm.g.doubleclick.net">
+    
+    <link rel="stylesheet" href="/assets/website/js/frontend/windowsv2ray/animate/animate.css">
+    <link rel="stylesheet" href="/assets/website/css/windowsv2ray/bootstrap.css">
+    <link rel="stylesheet" href="/assets/website/css/windowsv2ray/maicons.css">
+    <link rel="stylesheet" href="/assets/website/js/frontend/windowsv2ray/owl-carousel/css/owl.carousel.css">
+    <link rel="stylesheet" href="/assets/website/css/windowsv2ray/theme.css">
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3H18VFXW21"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-3H18VFXW21');
+</script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3332997411212854"
+     crossorigin="anonymous"></script>
+</head>
+
+<body data-page="detail">
+    <!-- Back to top button -->
+    <div class="back-to-top"></div>
+    <header>
+                <nav class="navbar navbar-expand-lg navbar-light navbar-float">
+            <div class="container">
+                <a href="/" class="navbar-brand">
+                                <span>2025年最新免费VPN</span>
+                                </a>
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse" id="navbarContent">
+                    <ul class="navbar-nav ml-lg-4 pt-3 pt-lg-0">
+                                                <li class="nav-item">
+                            <a href="/" class="nav-link">首页</a>
+                        </li>
+                                                <li class="nav-item">
+                            <a href="/free-nodes/" class="nav-link">免费节点</a>
+                        </li>
+                                                <li class="nav-item">
+                            <a href="/paid-subscribe/" class="nav-link">推荐机场</a>
+                        </li>
+                                                <li class="nav-item">
+                            <a href="/news/" class="nav-link">新闻资讯</a>
+                        </li>
+                                                <li class="nav-item">
+                            <a href="/client.htm" class="nav-link">客户端</a>
+                        </li>
+                                            </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container mt-5">
+            <div class="page-banner">
+                <div class="row justify-content-center align-items-center h-100">
+                    <div class="col-md-10">
+                        <h1 class="text-center">浅尝Spring注解开发_Bean生命周期及执行过程_在线工具</h1>
+                        <nav aria-label="Breadcrumb">
+                            <ul class="breadcrumb justify-content-center py-0 bg-transparent">
+                                <li class="breadcrumb-item"><a href="/">首页</a></li>
+                                <li class="breadcrumb-item"><a href="/news/">新闻资讯</a></li>
+                                <li class="breadcrumb-item active">正文</li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="page-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9">
+                                        <input type="hidden" id="share-website-info" data-name="Clash Meta免费节点订阅站" data-url="https://clash-meta.github.io">
+                  				  				  				</h1> <blockquote> <p>浅尝Spring注解开发，基于Spring 4.3.12<br /><font color="red">包含Bean生命周期、自定义初始化方法、Debug BeanPostProcessor执行过程及在Spring底层中的应用</font></p> </blockquote> <p><a href="http://www.m6000.cn/wp-content/themes/begin%20lts/inc/go.php?url=https://www.cnblogs.com/wei-ran/p/16203112.html"  title="浅尝Spring注解开发_自定义注册组件、属性赋值、自动装配" target="_blank"  rel="nofollow">浅尝Spring注解开发_自定义注册组件、属性赋值、自动装配</a><br /><a href="http://www.m6000.cn/wp-content/themes/begin%20lts/inc/go.php?url=https://www.cnblogs.com/wei-ran/p/16207148.html"  title="浅尝Spring注解开发_Bean生命周期及执行过程" target="_blank"  rel="nofollow">浅尝Spring注解开发_Bean生命周期及执行过程</a></p> <h2 id="bean生命周期">Bean生命周期</h2> <blockquote> <p>了解Bean的生命周期，就可以在Bean声明周期的不同阶段进行自定义的操作，满足更复杂的需求。简单的将Bean生命周期分为三个阶段：Bean创建、初始化、销毁</p> <ul> <li>对象创建：单实例在容器启动的时候创建对象，多实例在每次获取的时候创建对象 <ul> <li>初始化之前：BeanPostProcessor.postProcessBeforeInitialization()</li> </ul> </li> <li>初始化：对象创建完成，并赋值好，调用初始化方法 <ul> <li>初始化之后：BeanPostProcessor.postProcessAfterInitialization()</li> </ul> </li> <li>[容器创建完成]</li> <li>销毁：单实例在容器关闭的时候销毁，多实例<strong>容器不会管理这个bean，容器不会调用销毁方法</strong> </li> </ul> <p>现在可以通过下面方法在初始化和销毁时<strong>自定义初始化方法</strong>来干涉Bean创建过程。</p> <ol> <li>@Bean()注解参数</li> <li>InitializingBean、DisposableBean接口</li> <li>@PostConstruct、@PreDestroy注解</li> <li>BeanPostProcessor接口</li> </ol> </blockquote> <h3 id="1bean生命周期">1.@Bean生命周期</h3> <p>通过@Bean指定init-method和destroy-method的初始化方法</p> <ul> <li> <p>先自定义Bean初始化和销毁方法</p> <pre><code class="language-java">@Component public class Car { 	 	public Car(){ 		System.out.println("car constructor..."); 	} 	//现在只是普通方法 	public void init(){ 		System.out.println("car ... init..."); 	} 	//现在只是普通方法 	public void detory(){ 		System.out.println("car ... destory..."); 	}  } </code></pre> </li> <li> <p>配置进容器</p> <ul> <li>通过@Bean注解，在@Bean注册进容器时指定自定义方法</li> </ul> <pre><code class="language-java">@Configuration public class MainConfigOfLifeCycle { 	 	//@Scope("prototype")多实例，不管销毁 	//指定用于初始化和销毁的方法 	@Bean(initMethod="init",destroyMethod="destory") 	public Car car(){ 		return new Car(); 	}  } </code></pre> </li> <li> <p>测试</p> <pre><code class="language-java">public class IOCTest_LifeCycle { 	 	@Test 	public void test01(){ 		//1、创建ioc容器 		AnnotationConfigApplicationContext applicationContext = new AnnotationConfigApplicationContext(MainConfigOfLifeCycle.class); 		System.out.println("容器创建完成..."); 		 		//applicationContext.getBean("car"); 		//关闭容器 		applicationContext.close(); 	}  } </code></pre> <p>输出</p> <pre><code class="language-java">//先创建对象 car constructor... //再自定义初始化方法 car ... init... //创建完成 容器创建完成... //关闭时自定义销毁方法 car ... destory... </code></pre> </li> </ul> <h3 id="2initializingbeandisposablebean生命周期">2.InitializingBean，DisposableBean生命周期</h3> <p>接口，需实现，通过让Bean实现InitializingBean（定义初始化逻辑），DisposableBean（定义销毁逻辑）;</p> <ul> <li> <p>实现接口，自定义初始化Bean</p> <pre><code class="language-java">public class Cat implements InitializingBean,DisposableBean { 	 	public Cat(){ 		System.out.println("cat constructor..."); 	}  	//定义销毁逻辑 	@Override 	public void destroy() throws Exception { 		// TODO Auto-generated method stub 		System.out.println("cat...destroy..."); 	}  	//定义初始化逻辑 	@Override 	public void afterPropertiesSet() throws Exception { 		// TODO Auto-generated method stub 		System.out.println("cat...afterPropertiesSet..."); 	}  } </code></pre> </li> <li> <p>配置进容器</p> <ul> <li>在@Configuration配置类中使用@Bean</li> <li>或在Bean类上使用@Component然后再配置类上使用@ComponentScan</li> </ul> <pre><code class="language-java">//配置组件 @Component public class Cat implements InitializingBean,DisposableBean { 	//... } </code></pre> <pre><code class="language-java">//扫描进容器 @ComponentScan("com.xxx.bean") @Configuration public class MainConfigOfLifeCycle { 	//... } </code></pre> </li> <li> <p>测试</p> <pre><code class="language-java">public class IOCTest_LifeCycle { 	 	@Test 	public void test01(){ 		//1、创建ioc容器 		AnnotationConfigApplicationContext applicationContext = new AnnotationConfigApplicationContext(MainConfigOfLifeCycle.class); 		System.out.println("容器创建完成..."); 		 		//applicationContext.getBean("car"); 		//关闭容器 		applicationContext.close(); 	} } </code></pre> <p>输出</p> <pre><code class="language-java">//注意顺序，每个Bean先构造并初始化，然后才进行下一个Bean，关闭时从内向外 （猫）cat constructor... （猫）cat...afterPropertiesSet... （车）car constructor... （车）car ... init... //创建完成  容器创建完成... //关闭时销毁 （车）car ... destory... （猫）cat...destroy... </code></pre> </li> </ul> <h3 id="3postconstruct生命周期">3.@PostConstruct生命周期</h3> <p>可以使用JSR250；</p> <ul> <li> <p>@PostConstruct：在bean创建完成并且属性赋值完成之后，来执行初始化方法</p> </li> <li> <p>@PreDestroy：在容器销毁bean之前通知我们进行清理工作</p> </li> <li> <p>标注注解，自定义初始化Bean</p> <pre><code class="language-java">public class Dog {  	public Dog(){ 		System.out.println("dog constructor..."); 	} 	 	//对象创建并赋值之后调用 	@PostConstruct 	public void init(){ 		System.out.println("Dog....@PostConstruct..."); 	} 	 	//容器移除对象之前 	@PreDestroy 	public void detory(){ 		System.out.println("Dog....@PreDestroy..."); 	} } </code></pre> </li> <li> <p>配置进容器</p> <ul> <li>在@Configuration配置类中使用@Bean</li> <li>或在Bean类上使用@Component然后再配置类上使用@ComponentScan</li> </ul> <pre><code class="language-java">@Component public class Dog { 	//... } </code></pre> <pre><code class="language-java">//扫描进容器 @ComponentScan("com.xxx.bean") @Configuration public class MainConfigOfLifeCycle { 	//... } </code></pre> </li> <li> <p>测试</p> <pre><code class="language-java">public class IOCTest_LifeCycle { 	 	@Test 	public void test01(){ 		//1、创建ioc容器 		AnnotationConfigApplicationContext applicationContext = new AnnotationConfigApplicationContext(MainConfigOfLifeCycle.class); 		System.out.println("容器创建完成..."); 		 		//applicationContext.getBean("car"); 		//关闭容器 		applicationContext.close(); 	}  } </code></pre> <p>输出</p> <pre><code class="language-java">//注意顺序，每个Bean先构造并初始化，然后才进行下一个Bean，关闭时从内向外 （猫）cat constructor... （猫）cat...afterPropertiesSet... （狗）dog constructor... （狗）Dog....@PostConstruct... （车）car constructor... （车）car ... init... //创建完成 容器创建完成... //关闭时销毁 （车）car ... destory... （狗）Dog....@PreDestroy... （猫）cat...destroy... </code></pre> </li> </ul> <h3 id="4beanpostprocessor">4.BeanPostProcessor</h3> <blockquote> <p>postProcessBeforeInitialization：在创建Bean实例之后，在自定义初始化之前进行调用</p> <p>postProcessAfterInitialization：在自定义初始化之后进行调用</p> </blockquote> <p>BeanPostProcessor接口：bean的后置处理器，需实现，在bean初始化前后进行一些处理工作</p> <ul> <li> <p>postProcessBeforeInitialization：<font color="red">在<strong>（自定义初始化，如InitializingBean[afterPropertiesSet]、init-method等，就是上面那些自定义初始化方法）</strong>初始化之前工作<strong>（创建Bean实例之后，在自定义初始化之前）</strong></font></p> </li> <li> <p>postProcessAfterInitialization：<font color="red">在（自定义）初始化之后工作</font></p> </li> <li> <p>实现后置处理器接口</p> <pre><code class="language-java">public class MyBeanPostProcessor implements BeanPostProcessor {  	//初始化前置方法 	//bean：新创建的实例，还未初始化 	//beanName：未初始化的Bean名字 	@Override 	public Object postProcessBeforeInitialization(Object bean, String beanName) throws BeansException { 		// TODO Auto-generated method stub 		System.out.println("postProcessBeforeInitialization..."+beanName+"=&gt;"+bean); 		return bean; 	} 	//初始化后置方法 	@Override 	public Object postProcessAfterInitialization(Object bean, String beanName) throws BeansException { 		// TODO Auto-generated method stub 		System.out.println("postProcessAfterInitialization..."+beanName+"=&gt;"+bean); 		return bean; 	}      } </code></pre> </li> <li> <p>配置进容器</p> <ul> <li>在@Configuration配置类中使用@Bean</li> <li>或在Bean类上使用@Component然后再配置类上使用@ComponentScan</li> </ul> <pre><code class="language-java">@Component public class MyBeanPostProcessor implements BeanPostProcessor {      //... } </code></pre> <pre><code class="language-java">//扫描进容器 @ComponentScan("com.xxx.bean") @Configuration public class MainConfigOfLifeCycle { 	//... } </code></pre> </li> <li> <p>测试</p> <ul> <li>这次没有新增的Bean，只配置了一个后置处理器，</li> <li>这个后置处理器会对容器中的Bean起作用，包括上面三种自定义初始化Bean</li> </ul> <pre><code class="language-java">public class IOCTest_LifeCycle { 	 	@Test 	public void test01(){ 		//1、创建ioc容器 		AnnotationConfigApplicationContext applicationContext = new AnnotationConfigApplicationContext(MainConfigOfLifeCycle.class); 		System.out.println("容器创建完成..."); 		 		//applicationContext.getBean("car"); 		//关闭容器 		applicationContext.close(); 	}  } </code></pre> <p>输出</p> <pre><code class="language-java">//对于每一个Bean都要执行一遍 //1.创建 //2.BeanPostProcessor.postProcessBeforeInitialization() //3.初始化：对象创建完成，并赋值好，调用初始化方法... //4.BeanPostProcessor.postProcessAfterInitialization() //5.销毁   //以其中一个Bean为例： //构造对象 cat constructor... //初始化之前 postProcessBeforeInitialization...cat=&gt;com.xxx.bean.Cat@7d68ef40 //使用InitializingBean自定义初始化逻辑 cat...afterPropertiesSet... //初始化之后 postProcessAfterInitialization...cat=&gt;com.xxx.bean.Cat@7d68ef40 //创建完成 容器创建完成... //关闭时销毁 cat ... destroy... </code></pre> </li> </ul> <h3 id="beanpostprocessor原理">⭐BeanPostProcessor原理</h3> <blockquote> <p>bean赋值，注入其他组件，@Autowired，生命周期注解功能，@Async，xxxBeanPostProcessor都通过BeanPostProcessor实现</p> <p>详细视频 <a href="http://www.m6000.cn/wp-content/themes/begin%20lts/inc/go.php?url=https://www.bilibili.com/video/BV1gW411W7wy?p=16"  target="_blank"  rel="nofollow">https://www.bilibili.com/video/BV1gW411W7wy?p=16</a></p> </blockquote> <p>主要方法</p> <pre><code class="language-java">populateBean(beanName, mbd, instanceWrapper)：给bean进行属性赋值 initializeBean：初始化Bean {     applyBeanPostProcessorsBeforeInitialization(wrappedBean, beanName);初始化前应用后置处理器     invokeInitMethods(beanName, wrappedBean, mbd);执行自定义初始化     applyBeanPostProcessorsAfterInitialization(wrappedBean, beanName);初始化后应用后置处理器 } 遍历得到容器中所有的BeanPostProcessor；挨个执行beforeInitialization， 一但返回null，跳出for循环 </code></pre> <h4 id="执行过程">执行过程</h4> <p>了解BeanPostProcessor的执行过程，从AnnotationConfigApplicationContext开始Debug</p> <pre><code class="language-java">public class IOCTest_LifeCycle { 	 	@Test 	public void test01(){ 		//1、创建ioc容器 		AnnotationConfigApplicationContext applicationContext = new AnnotationConfigApplicationContext(MainConfigOfLifeCycle.class); 		System.out.println("容器创建完成..."); 		 		//applicationContext.getBean("car"); 		//关闭容器 		applicationContext.close(); 	} } </code></pre> <ol> <li>先从创建ioc容器开始，进入<code>AnnotationConfigApplicationContext()</code>构造方法，执行里面的<code>refresh()</code>方法刷新容器 <ol> <li> <code>refresh()</code>方法里面有一个<code>finishBeanFactoryInitialization(beanFactory)</code>初始化所有剩余的单实例对象，进入这个方法</li> </ol> </li> <li>这个方法最后一步有一个<code>beanFactory.preInstantiateSingletons()</code>初始化所有单实例Bean，进入这个方法 <ol> <li>触发所有非惰性单例bean的初始化</li> <li>里面调用<code>getBean(beanName)</code>，</li> <li>进入<code>getBean(beanName)</code>里面再调用<code>doGetBean(name,null,null,false)</code> </li> <li>进入<code>doGetBean(name,null,null,false)</code>里面有<code>getSingleton(beanName,new ObjectFactory(){singletonFactory.getObject()})</code>通过匿名内部类调用<code>getObject()</code> </li> </ol> </li> <li>此时通过匿名类<code>getObject()</code>进入下一个调用栈<code>AbstractBeanFactory$1.getObject()</code>，如果是单例，调用<code>createBean(beanName,mbd,args)</code> </li> <li>进入<code>createBean(beanName,mbd,args)</code>调用<code>doCreateBean(beanName,mbd,args)</code>创建一个实例，过程如下 <ol> <li>进入<code>doCreateBean(beanName,mbd,args)</code>，里面调用一个<font color="red"><code>initializeBean(beanName,exposedObject,mbd)</code>初始化方法，这个方法里面就是调用的后置处理器</font> </li> <li>在这个方法上面有<font color="red"><code>populateBean(beanName，mbd,instanceWrapper)</code>方法，这个方法为Bean属性赋值</font> </li> <li> <font color="red">进入<code>initializeBean(beanName,exposedObject,mbd)</code>，下面有一个<code>invokeInitMethods(beanName,wrappedBean,mbd)</code>执行初始化方法</font>（就是上面的自定义初始化InitializingBean[afterPropertiesSet]、init-method）</li> <li><font color="red">在<code>invokeInitMethods(beanName,wrappedBean,mbd)[在初始化之前应用 BeanPost 处理器]</code>上面有一个<code>applyBeanPostProcessorsBeforeInitialization(wrappedBean,beanName)</code>下面有一个<code>applyBeanPostProcessorsAfterInitialization(wrappedBean,beanName)[在初始化之后应用 BeanPost 处理器]</code>，作用是在初始化之前应用所有的<code>BeanPostProcessors</code>在初始化之后应用所有的<code>BeanPostProcessors</code></font></li> </ol> </li> <li>进入<code>applyBeanPostProcessorsBeforeInitialization(wrappedBean,beanName)</code> <ol> <li>里面有<code>getBeanPostProcessors()</code>找到所有<code>BeanPostProcessors</code>遍历，包括Spring系统的<code>BeanPostProcessor</code>如<code>ApplicationContextAwareProcessor</code>、<code>ConfigurationClassPostProcessor</code>等，<font color="red">然后才是自定义的<code>MyBeanPostProcessor</code></font>，依次执行<code>beanProcessor.postProcessBeforeInitialization()</code> </li> <li>如果有执行返回null，就结束遍历，返回null，后面的处理器就不执行了（不应用后续的<code>BeanPostProcessors</code>了）</li> </ol> </li> </ol> <h4 id="调用栈">调用栈</h4> <ul> <li> <p>获取单例</p> <p><img decoding="async" src="http://img.555519.xyz/uploads3/20220430/f95f346405b885dea8ad4962f0a40d5e.jpg" alt="浅尝Spring注解开发_Bean生命周期及执行过程_在线工具"></p> </li> <li> <p>创建实例Bean</p> <p><img decoding="async" src="http://img.555519.xyz/uploads3/20220430/5f72dfb567cc71a2bf74332230a00475.jpg" alt="浅尝Spring注解开发_Bean生命周期及执行过程_在线工具"></p> </li> <li> <p>给Bean属性赋值和初始化Bean</p> <p><img decoding="async" src="http://img.555519.xyz/uploads3/20220430/f9bdfd65760db6faf09d0abded9f8189.jpg" alt="浅尝Spring注解开发_Bean生命周期及执行过程_在线工具"></p> </li> </ul> <h4 id="完整流程">完整流程</h4> <p>Spring底层对 BeanPostProcessor 的使用；</p> <p><img decoding="async" src="http://img.555519.xyz/uploads3/20220430/46cbd5a6059a2d26f8ed99d76fea6ac1.jpg" alt="浅尝Spring注解开发_Bean生命周期及执行过程_在线工具"></p> <ol> <li>由上图可以看到，Spring中的BeanPostProcessor在实例化过程处于的位置，BeanPostProcessor接口有两个方法需要实现：postProcessBeforeInitialization和postProcessAfterInitialization</li> <li>前者在实例化及依赖注入完成后、在任何初始化代码（比如配置文件中的init-method）调用之前调用；后者在初始化代码调用之后调用。</li> </ol> <h3 id="beanpostprocessor在spring底层的使用">⭐BeanPostProcessor在Spring底层的使用</h3> <blockquote> <p><strong>许多注解底层都是基于BeanPostProcessor</strong></p> </blockquote> <p>BeanPostProcessor接口实现类</p> <p><img decoding="async" src="http://img.555519.xyz/uploads3/20220430/108382081456bc55a3933638992e898a.jpg" alt="浅尝Spring注解开发_Bean生命周期及执行过程_在线工具"></p> <h4 id="向组件中注入ioc容器">向组件中注入IoC容器</h4> <blockquote> <p>在Bean创建过程中，初始化之前，判断是否实现了某Aware接口，如果实现了，就向Bean中注入ApplicationContext容器</p> </blockquote> <ul> <li> <p>向Bean中注入IoC容器</p> <ul> <li> <p>实现ApplicationContextAware接口，声明属性，赋值，就可以在组件中使用Ioc容器</p> <pre><code class="language-java">@Component public class Dog implements ApplicationContextAware { 	 	//声明IoC容器 	private ApplicationContext applicationContext; 	 	public Dog(){ 		System.out.println("dog constructor..."); 	} 	 	//对象创建并赋值之后调用 	@PostConstruct 	public void init(){ 		System.out.println("Dog....@PostConstruct..."); 	} 	 	//容器移除对象之前 	@PreDestroy 	public void detory(){ 		System.out.println("Dog....@PreDestroy..."); 	}  	//把applicationContext IoC容器赋值给属性 	@Override 	public void setApplicationContext(ApplicationContext applicationContext) throws BeansException { 		// TODO Auto-generated method stub 		this.applicationContext = applicationContext; 	} } </code></pre> </li> </ul> </li> <li> <p>原理是通过<code>ApplicationContextAwareProcessor</code>实现</p> <ul> <li> <p><code>ApplicationContextAwareProcessor</code>实现了<code>BeanPostProcessor</code>接口</p> <p><img decoding="async" src="http://img.555519.xyz/uploads3/20220430/700d4c18c7e3420e86f64c46526990b2.jpg" alt="浅尝Spring注解开发_Bean生命周期及执行过程_在线工具"></p> </li> <li> <p>在<code>postProcessBeforeInitialization()</code>方法中</p> <ol> <li>在Bean初始化之前，判断Bean是否实现了<code>ApplicationContextAware</code>接口，或其他Aware接口</li> <li>如果实现了，就调用<code>invokeAwareInterfaces(bean)</code>给Bean注入值</li> <li>判断Bean是什么类型Aware，将Bean转成对应类型调用<code>((ApplicationContextAware)bean).setApplicationContext(this.applicationContext)</code>注入IoC容器</li> <li>于是就到了上面实现的接口的未实现方法中</li> </ol> </li> </ul> </li> </ul> <h4 id="数据校验">数据校验</h4> <ul> <li> <code>BeanValidationPostProcessor</code>也实现了<code>BeanPostProcessor</code>接口</li> <li>在Bean创建完赋值后，同样调用<code>postProcessBeforeInitialization()</code>方法，进行数据校验 <ul> <li><code>postProcessBeforeInitialization(){doValidate(bean)}</code></li> <li><code>postProcessAfterInitialization(){doValidate(bean)}</code></li> </ul> </li> </ul> <h4 id="自定义初始化注解">自定义初始化注解</h4> <ul> <li>Bean初始化有一种方法是使用<code>@PostConstruct</code>注解，也是通过<code>BeanPostProcessor</code>实现</li> <li> <code>InitDestroyAnnotationBeanPostProcessor</code>处理<code>@PostConstruct</code>和<code>@PreDestroy</code>注解</p> <ul> <li>在<code>postProcessBeforeInitialization()</code>中找到Bean的生命周期注解所标注的方法，如<code>initMethods、destroyMethods</code> </li> <li>找到之后就执行注解标注的初始化方法<code>metatata.invokeInitMethods(bean,beanName)</code>和<code>element.invoke(target)</code>，利用反射执行。</li> </ul> </li> </ul> <h4 id="自动注入注解autowired">自动注入注解@Autowired</h4> <ul> <li>为什么@Autowired能够自动注入值，是通过这个<code>AutowiredAnnotationBeanPostProcessor</code>实现<code>BeanPostProcessors</code>接口</li> <li>在对象创建完之后，处理标注<code>@Autowired</code>标注的所有属性进行注入值</li> </ul> 			                <div class="clearfix"></div>
+                <div class="col-md-12 mt-5">
+                                        <p>上一个：<a href="/news/article-68583.htm">南京宠物总医院领养 南京宠物总医院领养中心电话</a></p>
+                                        <p>下一个：<a href="/news/article-69244.htm">申请动物诊疗许可证需要准备哪些材料和手续和证件（申请动物诊疗许可证向哪个部门）</a></p>
+                                    </div>
+                                    </div>
+                    <div class="col-md-3">
+                        <div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">热门文章</h3>
+    </div>
+    <div class="panel-body">
+        <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
+                        <li class="py-2"><a href="/free-nodes/2025-2-27-free-v2ray.htm" title="2025年免费VPN | 2月27日18.3M/S|免费SSR/Clash/V2ray/Shadowrocket免费节点订阅分享">2025年免费VPN | 2月27日18.3M/S|免费SSR/Clash/V2ray/Shadowrocket免费节点订阅分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-2-20-node-share-links.htm" title="2025年免费VPN | 2月20日19.2M/S|免费SSR/Clash/V2ray/Shadowrocket免费节点订阅分享">2025年免费VPN | 2月20日19.2M/S|免费SSR/Clash/V2ray/Shadowrocket免费节点订阅分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-3-1-node-share.htm" title="2025年免费VPN | 3月1日19M/S|免费V2ray/Shadowrocket/Clash/SSR免费节点订阅分享">2025年免费VPN | 3月1日19M/S|免费V2ray/Shadowrocket/Clash/SSR免费节点订阅分享</a></li>
+                        <li class="py-2"><a href="/news/article-63597.htm" title="宠物口粮利润多少 宠物口粮利润多少钱">宠物口粮利润多少 宠物口粮利润多少钱</a></li>
+                        <li class="py-2"><a href="/news/article-62414.htm" title="动物疫苗需要冷藏吗多少度（动物疫苗使用时的注意事项有哪些）">动物疫苗需要冷藏吗多少度（动物疫苗使用时的注意事项有哪些）</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-3-6-free-node-subscribe-links.htm" title="2025年免费VPN | 3月6日21.6M/S|免费V2ray/Shadowrocket/SSR/Clash免费节点订阅分享">2025年免费VPN | 3月6日21.6M/S|免费V2ray/Shadowrocket/SSR/Clash免费节点订阅分享</a></li>
+                        <li class="py-2"><a href="/news/article-60076.htm" title="宠物领养需要押金吗多少钱（宠物领养需要押金吗多少钱一天）">宠物领养需要押金吗多少钱（宠物领养需要押金吗多少钱一天）</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-2-19-free-subscribe-node.htm" title="2025年免费VPN | 2月19日20.3M/S|免费SSR/V2ray/Clash/Shadowrocket免费节点订阅分享">2025年免费VPN | 2月19日20.3M/S|免费SSR/V2ray/Clash/Shadowrocket免费节点订阅分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-2-22-free-subscribe-node.htm" title="2025年免费VPN | 2月22日19.9M/S|免费V2ray/Shadowrocket/Clash/SSR免费节点订阅分享">2025年免费VPN | 2月22日19.9M/S|免费V2ray/Shadowrocket/Clash/SSR免费节点订阅分享</a></li>
+                        <li class="py-2"><a href="/news/article-60077.htm" title="动物医院工作时间表图片（动物医院工作时间表图片高清）">动物医院工作时间表图片（动物医院工作时间表图片高清）</a></li>
+                    </ul>
+    </div>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">归纳</h3>
+    </div>
+    <div class="panel-body">
+        <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
+                        <li class="py-2">
+                <h4><span class="badge" style="float: right;">24</span> <a href="/date/2025-03/" title="2025-03 归档">2025-03</a></h4>
+            </li>
+                        <li class="py-2">
+                <h4><span class="badge" style="float: right;">30</span> <a href="/date/2025-02/" title="2025-02 归档">2025-02</a></h4>
+            </li>
+                    </ul>
+    </div>
+</div>
+
+
+
+                    </div>
+                </div>
+            </div> <!-- .container -->
+        </div> <!-- .page-section -->
+    </main>
+        <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 py-2">
+                    <p id="copyright">
+                            <p>
+                                <a href="/">首页</a> | 
+                                <a href="/free-node/">免费节点</a> | 
+                                <a href="/news/">新闻资讯</a> |
+                                <a href="/about-us.htm">关于我们</a> |
+                                <a href="/disclaimer.htm">免责申明</a> |
+                                <a href="/privacy.htm">隐私申明</a> |
+                                <a href="/sitemap.xml">网站地图</a>
+                            </p>
+                        2025年最新免费VPN 机场订阅节点官网 版权所有 Powered by WordPress
+                    </p>
+                </div>
+                <div class="col-sm-6 py-2 text-right">
+                    <div class="d-inline-block px-3">
+                        <a href="#">Privacy</a>
+                    </div>
+                    <div class="d-inline-block px-3">
+                        <a href="#">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- .container -->
+    </footer> <!-- .page-footer -->
+    <script src="/assets/website/js/frontend/windowsv2ray/jquery-3.5.1.min.js"></script>
+    <script src="/assets/website/js/frontend/windowsv2ray/bootstrap.bundle.min.js"></script>
+    <script src="/assets/website/js/frontend/windowsv2ray/wow/wow.min.js"></script>
+    <script src="/assets/website/js/frontend/windowsv2ray/owl-carousel/js/owl.carousel.min.js"></script>
+    <script src="/assets/website/js/frontend/windowsv2ray/waypoints/jquery.waypoints.min.js"></script>
+    <script src="/assets/website/js/frontend/windowsv2ray/animateNumber/jquery.animateNumber.min.js"></script>
+    <script src="/assets/website/js/frontend/windowsv2ray/theme.js"></script>
+    <script src="https://www.freeclashnode.com/assets/js/frontend/invite-url.js"></script>
+    <script src="/assets/website/js/frontend/G.js"></script>
+</body>
+
+</html>
