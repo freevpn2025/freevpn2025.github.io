@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html xml:lang="zh-CN" lang="zh-CN">
+
+<head>
+        <link rel="canonical" href="https://freevpn2025.github.io/news/article-87793.htm" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Java 语言实现简易版扫码登录_在线工具</title>
+        <meta name="description" content="基本介绍 相信大家对二维码都不陌生，生活中到处充斥着扫码登录的场景，如登录网页版微信、支付宝等。最近学习了一下扫码登录的原理，感觉蛮有趣的，于是自己实现了一个简易版扫码登录的 Demo，以此记录一下学" />
+        <link rel="icon" href="/assets/website/img/windowsv2ray/favicon.ico" type="image/x-icon"/>
+
+    <meta name="author" content="2025年最新免费VPN 机场订阅节点官网">
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://freevpn2025.github.io/news/article-87793.htm" />
+    <meta property="og:site_name" content="2025年最新免费VPN 机场订阅节点官网" />
+    <meta property="og:title" content="Java 语言实现简易版扫码登录_在线工具" />
+    <meta property="og:image" content="https://freevpn2025.github.io/uploads/20240604/94a8a22dd6926177b9d0956f75c68a73.webp" />
+        <meta property="og:release_date" content="2025-04-03T08:34:24" />
+    <meta property="og:updated_time" content="2025-04-03T08:34:24" />
+        <meta property="og:description" content="基本介绍 相信大家对二维码都不陌生，生活中到处充斥着扫码登录的场景，如登录网页版微信、支付宝等。最近学习了一下扫码登录的原理，感觉蛮有趣的，于是自己实现了一个简易版扫码登录的 Demo，以此记录一下学" />
+        
+    <meta name="applicable-device" content="pc,mobile" />
+    <meta name="renderer" content="webkit" />
+    <meta name="force-rendering" content="webkit" />
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta name="robots" content="max-image-preview:large" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Java 语言实现简易版扫码登录_在线工具">
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="dns-prefetch" href="https:/www.googletagmanager.com">
+    <link rel="dns-prefetch" href="https://www.googleadservices.com">
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+    <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com">
+    <link rel="dns-prefetch" href="https://cm.g.doubleclick.net">
+    
+    <link rel="stylesheet" href="/assets/website/js/frontend/windowsv2ray/animate/animate.css">
+    <link rel="stylesheet" href="/assets/website/css/windowsv2ray/bootstrap.css">
+    <link rel="stylesheet" href="/assets/website/css/windowsv2ray/maicons.css">
+    <link rel="stylesheet" href="/assets/website/js/frontend/windowsv2ray/owl-carousel/css/owl.carousel.css">
+    <link rel="stylesheet" href="/assets/website/css/windowsv2ray/theme.css">
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3H18VFXW21"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-3H18VFXW21');
+</script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3332997411212854"
+     crossorigin="anonymous"></script>
+</head>
+
+<body data-page="detail">
+    <!-- Back to top button -->
+    <div class="back-to-top"></div>
+    <header>
+                <nav class="navbar navbar-expand-lg navbar-light navbar-float">
+            <div class="container">
+                <a href="/" class="navbar-brand">
+                                <span>2025年最新免费VPN</span>
+                                </a>
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse" id="navbarContent">
+                    <ul class="navbar-nav ml-lg-4 pt-3 pt-lg-0">
+                                                <li class="nav-item">
+                            <a href="/" class="nav-link">首页</a>
+                        </li>
+                                                <li class="nav-item">
+                            <a href="/free-nodes/" class="nav-link">免费节点</a>
+                        </li>
+                                                <li class="nav-item">
+                            <a href="/paid-subscribe/" class="nav-link">推荐机场</a>
+                        </li>
+                                                <li class="nav-item">
+                            <a href="/news/" class="nav-link">新闻资讯</a>
+                        </li>
+                                                <li class="nav-item">
+                            <a href="/client.htm" class="nav-link">客户端</a>
+                        </li>
+                                            </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container mt-5">
+            <div class="page-banner">
+                <div class="row justify-content-center align-items-center h-100">
+                    <div class="col-md-10">
+                        <h1 class="text-center">Java 语言实现简易版扫码登录_在线工具</h1>
+                        <nav aria-label="Breadcrumb">
+                            <ul class="breadcrumb justify-content-center py-0 bg-transparent">
+                                <li class="breadcrumb-item"><a href="/">首页</a></li>
+                                <li class="breadcrumb-item"><a href="/news/">新闻资讯</a></li>
+                                <li class="breadcrumb-item active">正文</li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="page-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9">
+                                        <input type="hidden" id="share-website-info" data-name="Clash Meta免费节点订阅站" data-url="https://clash-meta.github.io">
+                  				  				  				<h2 id="基本介绍">基本介绍</h2> <p>相信大家对二维码都不陌生，生活中到处充斥着扫码登录的场景，如登录网页版微信、支付宝等。最近学习了一下扫码登录的原理，感觉蛮有趣的，于是自己实现了一个简易版扫码登录的 Demo，以此记录一下学习过程。</p> <blockquote> <p>实际上是面试的时候被问到了 ￣△￣！</p> </blockquote> <h2 id="原理解析">原理解析</h2> <p><strong>1. 身份认证机制</strong></p> <p>在介绍扫码登录的原理之前，我们先聊一聊服务端的身份认证机制。以普通的<code>账号 + 密码</code> 登录方式为例，服务端收到用户的登录请求后，首先验证账号、密码的合法性。如果验证通过，那么服务端会为用户分配一个 token，该 token 与用户的身份信息相关联，可作为用户的登录凭证。之后 PC 端再次发送请求时，需要在请求的 Header 或者 Query 参数中携带 token，服务端根据 token 便可识别出当前用户。token 的优点是更加方便、安全，它降低了账号密码被劫持的风险，而且用户不需要重复地输入账号和密码。PC 端通过账号和密码登录的过程如下：</p> <p><img decoding="async" src="http://img.555519.xyz/uploads3/20220509/634bb884a69fd4be5e19cc1afe0cb998.jpg" alt="Java 语言实现简易版扫码登录_在线工具"></p> <p>扫码登录本质上也是一种身份认证方式，<code>账号 + 密码</code> 登录与扫码登录的区别在于，前者是利用 PC 端的账号和密码为 PC 端申请一个 token，后者是利用<code>手机端的 token + 设备信息</code> 为 PC 端申请一个 token。这两种登录方式的目的相同，都是为了使 PC 端获得服务端的 "授权"，在为 PC 端申请 token 之前，二者都需要向服务端证明自己的身份，也就是必须让服务端知道当前用户是谁，这样服务端才能为其生成 PC 端 token。由于扫码前手机端一定是处于已登录状态的，因此手机端本身已经保存了一个 token，该 token 可用于服务端的身份识别。那么为什么手机端在验证身份时还需要设备信息呢？实际上，手机端的身份认证和 PC 端略有不同：</p> <ol> <li> <p>手机端在登录前也需要输入账号和密码，但登录请求中除了账号密码外还包含着设备信息，例如设备类型、设备 id 等。</p> </li> <li> <p>接收到登录请求后，服务端会验证账号和密码，验证通过后，将用户信息与设备信息关联起来，也就是将它们存储在一个数据结构 structure 中。</p> </li> <li> <p>服务端为手机端生成一个 token，并将 token 与用户信息、设备信息关联起来，即以 token 为 key，structure 为 value，将该键值对持久化保存到本地，之后将 token 返回给手机端。</p> </li> <li> <p>手机端发送请求，携带 token 和设备信息，服务端根据 token 查询出 structure，并验证 structure 中的设备信息和手机端的设备信息是否相同，以此判断用户的有效性。</p> </li> </ol> <p>我们在 PC 端登录成功后，可以短时间内正常浏览网页，但之后访问网站时就要重新登陆了，这是因为 token 是有过期时间的，较长的有效时间会增大 token 被劫持的风险。但是，手机端好像很少有这种问题，例如微信登录成功后可以一直使用，即使关闭微信或重启手机。这是因为设备信息具有唯一性，即使 token 被劫持了，由于设备信息不同，攻击者也无法向服务端证明自己的身份，这样大大提高了安全系数，因此 token 可以长久使用。手机端通过账号密码登录的过程如下：</p> <p><img decoding="async" src="http://img.555519.xyz/uploads3/20220509/992d264977fce4a14c94e7cce85ebd3a.jpg" alt="Java 语言实现简易版扫码登录_在线工具"></p> <p><strong>2. 流程概述</strong></p> <p>了解了服务端的身份认证机制后，我们再聊一聊扫码登录的整个流程。以网页版微信为例，我们在 PC 端点击二维码登录后，浏览器页面会弹出二维码图片，此时打开手机微信扫描二维码，PC 端随即显示 "正在扫码"，手机端点击确认登录后，PC 端就会显示 "登陆成功" 了。</p> <p>上述过程中，服务端可以根据手机端的操作来响应 PC 端，那么服务端是如何将二者关联起来的呢？答案就是通过 "二维码"，严格来说是通过二维码中的内容。使用二维码解码器扫描网页版微信的二维码，可以得到如下内容：</p> <p><img decoding="async" src="http://img.555519.xyz/uploads3/20220509/8fab41d5ea9c36c3738b54dd4ea8830b.jpg" alt="Java 语言实现简易版扫码登录_在线工具"></p> <p>由上图我们得知，二维码中包含的其实是一个网址，手机扫描二维码后，会根据该网址向服务端发送请求。接着，我们打开 PC 端浏览器的开发者工具：</p> <p><img decoding="async" src="http://img.555519.xyz/uploads3/20220509/522f4267278c0ec4542b02e6cd8bd8e6.jpg" alt="Java 语言实现简易版扫码登录_在线工具"></p> <p>可见，在显示出二维码之后，PC 端一直都没有 "闲着"，它通过轮询的方式不断向服务端发送请求，以获知手机端操作的结果。这里我们注意到，PC 端发送的 URL 中有一个参数 uuid，值为 "Adv-NP1FYw=="，该 uuid 也存在于二维码包含的网址中。由此我们可以推断，服务端在生成二维码之前会先生成一个二维码 id，二维码 id 与二维码的状态、过期时间等信息绑定在一起，一同存储在服务端。手机端可以根据二维码 id 操作服务端二维码的状态，PC 端可以根据二维码 id 向服务端询问二维码的状态。</p> <p>二维码最初为 "待扫描" 状态，手机端扫码后服务端将其状态改为 "待确认" 状态，此时 PC 端的轮询请求到达，服务端向其返回 "待确认" 的响应。手机端确认登录后，二维码变成 "已确认" 状态，服务端为 PC 端生成用于身份认证的 token，PC 端再次询问时，就可以得到这个 token。整个扫码登录的流程如下图所示：</p> <p><img decoding="async" src="http://img.555519.xyz/uploads3/20220509/a8ae730590a9781c4e2818d2b9e97123.jpg" alt="Java 语言实现简易版扫码登录_在线工具"></p> <ol> <li> <p>PC 端发送 "扫码登录" 请求，服务端生成二维码 id，并存储二维码的过期时间、状态等信息。</p> </li> <li> <p>PC 端获取二维码并显示。</p> </li> <li> <p>PC 端开始轮询检查二维码的状态，二维码最初为 "待扫描" 状态。</p> </li> <li> <p>手机端扫描二维码，获取二维码 id。</p> </li> <li> <p>手机端向服务端发送 "扫码" 请求，请求中携带二维码 id、手机端 token 以及设备信息。</p> </li> <li> <p>服务端验证手机端用户的合法性，验证通过后将二维码状态置为 "待确认"，并将用户信息与二维码关联在一起，之后为手机端生成一个一次性 token，该 token 用作确认登录的凭证。</p> </li> <li> <p>PC 端轮询时检测到二维码状态为 "待确认"。</p> </li> <li> <p>手机端向服务端发送 "确认登录" 请求，请求中携带着二维码 id、一次性 token 以及设备信息。</p> </li> <li> <p>服务端验证一次性 token，验证通过后将二维码状态置为 "已确认"，并为 PC 端生成 PC 端 token。</p> </li> <li> <p>PC 端轮询时检测到二维码状态为 "已确认"，并获取到了 PC 端 token，之后 PC 端不再轮询。</p> </li> <li> <p>PC 端通过 PC 端 token 访问服务端。</p> </li> </ol> <p>上述过程中，我们注意到，手机端扫码后服务端会返回一个一次性 token，该 token 也是一种身份凭证，但它只能使用一次。一次性 token 的作用是确保 "扫码请求" 与 "确认登录" 请求由同一个手机端发出，也就是说，手机端用户不能 "帮其他用户确认登录"。</p> <blockquote> <p>关于一次性 token 的知识本人也不是很了解，但可以推测，在服务端的缓存中，一次性 token 映射的 value 应该包含 "扫码" 请求传入的二维码信息、设备信息以及用户信息。</p> </blockquote> <h2 id="代码实现">代码实现</h2> <p><strong>1. 环境准备</strong></p> <ul> <li> <p>JDK 1.8：项目使用 Java 语言编写。</p> </li> <li> <p>Maven：依赖管理。</p> </li> <li> <p>Redis：Redis 既作为数据库存储用户的身份信息（为了简化操作未使用 MySQL），也作为缓存存储二维码信息、token 信息等。</p> </li> </ul> <p><strong>2. 主要依赖</strong></p> <ul> <li> <p>SpringBoot：项目基本环境。</p> </li> <li> <p>Hutool：开源工具类，其中的 QrCodeUtil 可用于生成二维码图片。</p> </li> <li> <p>Thymeleaf：模板引擎，用于页面渲染。</p> </li> </ul> <p><strong>3. 生成二维码</strong></p> <p>二维码的生成以及二维码状态的保存逻辑如下：</p> <pre><code class="language-java">@RequestMapping(path = "/getQrCodeImg", method = RequestMethod.GET) public String createQrCodeImg(Model model) {     String uuid = loginService.createQrImg();    String qrCode = Base64.encodeBase64String(QrCodeUtil.generatePng("http://127.0.0.1:8080/login/uuid=" + uuid, 300, 300));     model.addAttribute("uuid", uuid);    model.addAttribute("QrCode", qrCode);     return "login"; }</code></pre> <p>PC 端访问 "登录" 请求时，服务端调用 createQrImg 方法，生成一个 uuid 和一个 LoginTicket 对象，LoginTicket 对象中封装了用户的 userId 和二维码的状态。然后服务端将 uuid 作为 key，LoginTicket 对象作为 value 存入到 Redis 服务器中，并设置有效时间为 5 分钟（二维码的有效时间），createQrImg 方法的逻辑如下：</p> <pre><code class="language-java">public String createQrImg() {    // uuid    String uuid = CommonUtil.generateUUID();    LoginTicket loginTicket = new LoginTicket();    // 二维码最初为 WAITING 状态    loginTicket.setStatus(QrCodeStatusEnum.WAITING.getStatus());     // 存入 redis    String ticketKey = CommonUtil.buildTicketKey(uuid);    cacheStore.put(ticketKey, loginTicket, LoginConstant.WAIT_EXPIRED_SECONDS, TimeUnit.SECONDS);     return uuid; }</code></pre> <p>我们在前一节中提到，手机端的操作主要影响二维码的状态，PC 端轮询时也是查看二维码的状态，那么为什么还要在 LoginTicket 对象中封装 userId 呢？这样做是为了将二维码与用户进行关联，想象一下我们登录网页版微信的场景，手机端扫码后，PC 端就会显示用户的头像，虽然手机端并未确认登录，但 PC 端轮询时已经获取到了当前扫码的用户（仅头像信息）。因此手机端扫码后，需要将二维码与用户绑定在一起，使用 LoginTicket 对象只是一种实现方式。二维码生成后，我们将其状态置为 "待扫描" 状态，userId 不做处理，默认为 null。</p> <p><strong>4. 扫描二维码</strong></p> <p>手机端发送 "扫码" 请求时，Query 参数中携带着 uuid，服务端接收到请求后，调用 scanQrCodeImg 方法，根据 uuid 查询出二维码并将其状态置为 "待确认" 状态，操作完成后服务端向手机端返回 "扫码成功" 或 "二维码已失效" 的信息：</p> <pre><code class="language-java">@RequestMapping(path = "/scan", method = RequestMethod.POST) @ResponseBody public Response scanQrCodeImg(@RequestParam String uuid) {    JSONObject data = loginService.scanQrCodeImg(uuid);    if (data.getBoolean("valid")) {       return Response.createResponse("扫码成功", data);    }    return Response.createErrorResponse("二维码已失效"); }</code></pre> <p>scanQrCodeImg 方法的主要逻辑如下：</p> <pre><code class="language-java">public JSONObject scanQrCodeImg(String uuid) {    // 避免多个移动端同时扫描同一个二维码    lock.lock();    JSONObject data = new JSONObject();    try {       String ticketKey = CommonUtil.buildTicketKey(uuid);       LoginTicket loginTicket = (LoginTicket) cacheStore.get(ticketKey);        // redis 中 key 过期后也可能不会立即删除       Long expired = cacheStore.getExpireForSeconds(ticketKey);       boolean valid = loginTicket != null &amp;&amp;                QrCodeStatusEnum.parse(loginTicket.getStatus()) == QrCodeStatusEnum.WAITING &amp;&amp;                expired != null &amp;&amp;                expired &gt;= 0;       if (valid) {             User user = hostHolder.getUser();             if (user == null) {                throw new RuntimeException("用户未登录");             }             // 修改扫码状态             loginTicket.setStatus(QrCodeStatusEnum.SCANNED.getStatus());             Condition condition = CONDITION_CONTAINER.get(uuid);             if (condition != null) {                condition.signal();                CONDITION_CONTAINER.remove(uuid);             }             // 将二维码与用户进行关联             loginTicket.setUserId(user.getUserId());             cacheStore.put(ticketKey, loginTicket, expired, TimeUnit.SECONDS);              // 生成一次性 token, 用于之后的确认请求             String onceToken = CommonUtil.generateUUID();              cacheStore.put(CommonUtil.buildOnceTokenKey(onceToken), uuid, LoginConstant.ONCE_TOKEN_EXPIRE_TIME, TimeUnit.SECONDS);              data.put("once_token", onceToken);       }       data.put("valid", valid);       return data;    } finally {       lock.unlock();    } }</code></pre> <ol> <li> <p>首先根据 uuid 查询 Redis 中存储的 LoginTicket 对象，然后检查二维码的状态是否为 "待扫描" 状态，如果是，那么将二维码的状态改为 "待确认" 状态。如果不是，那么该二维码已被扫描过，服务端提示用户 "二维码已失效"。我们规定，只允许第一个手机端能够扫描成功，加锁的目的是为了保证<code>查询 + 修改</code> 操作的原子性，避免两个手机端同时扫码，且同时检测到二维码的状态为 "待扫描"。</p> </li> <li> <p>上一步操作成功后，服务端将 LoginTicket 对象中的 userId 置为当前用户（扫码用户）的 userId，也就是将二维码与用户信息绑定在一起。由于<strong>扫码请求是由手机端发送的</strong>，因此该请求一定来自于一个有效的用户，我们在项目中配置一个拦截器（也可以是过滤器），当拦截到 "扫码" 请求后，根据请求中的 token（手机端发送请求时一定会携带 token）查询出用户信息，并将其存储到 ThreadLocal 容器（hostHolder）中，之后绑定信息时就可以从 ThreadLocal 容器将用户信息提取出来。注意，这里的 token 指的手机端 token，实际中应该还有设备信息，但为了简化操作，我们忽略掉设备信息。</p> </li> <li> <p>用户信息与二维码信息关联在一起后，服务端为手机端生成一个一次性 token，并存储到 Redis 服务器，其中 key 为一次性 token 的值，value 为 uuid。一次性 token 会返回给手机端，作为 "确认登录" 请求的凭证。</p> </li> </ol> <p>上述代码中，当二维码的状态被修改后，我们唤醒了在 condition 中阻塞的线程，这一步的目的是为了实现长轮询操作，下文中会介绍长轮询的设计思路。</p> <p><strong>5. 确认登录</strong></p> <p>手机端发送 "确认登录" 请求时，Query 参数中携带着 uuid，且 Header 中携带着一次性 token，服务端接收到请求后，首先验证一次性 token 的有效性，即检查一次性 token 对应的 uuid 与 Query 参数中的 uuid 是否相同，以确保扫码操作和确认操作来自于同一个手机端，该验证过程可在拦截器中配置。验证通过后，服务端调用 confirmLogin 方法，将二维码的状态置为 "已确认"：</p> <pre><code class="language-java">@RequestMapping(path = "/confirm", method = RequestMethod.POST) @ResponseBody public Response confirmLogin(@RequestParam String uuid) {    boolean logged = loginService.confirmLogin(uuid);    String msg = logged ? "登录成功!" : "二维码已失效!";    return Response.createResponse(msg, logged); }</code></pre> <p>confirmLogin 方法的主要逻辑如下：</p> <pre><code class="language-java">public boolean confirmLogin(String uuid) {    String ticketKey = CommonUtil.buildTicketKey(uuid);    LoginTicket loginTicket = (LoginTicket) cacheStore.get(ticketKey);    boolean logged = true;    Long expired = cacheStore.getExpireForSeconds(ticketKey);    if (loginTicket == null || expired == null || expired == 0) {       logged = false;    } else {       lock.lock();       try {             loginTicket.setStatus(QrCodeStatusEnum.CONFIRMED.getStatus());             Condition condition = CONDITION_CONTAINER.get(uuid);             if (condition != null) {                condition.signal();                CONDITION_CONTAINER.remove(uuid);             }             cacheStore.put(ticketKey, loginTicket, expired, TimeUnit.SECONDS);       } finally {             lock.unlock();       }    }    return logged; }</code></pre> <p>该方法会根据 uuid 查询二维码是否已经过期，如果未过期，那么就修改二维码的状态。</p> <p><strong>6. PC 端轮询</strong></p> <p>轮询操作指的是前端重复多次向后端发送相同的请求，以获知数据的变化。轮询分为长轮询和短轮询：</p> <ul> <li> <p>长轮询：服务端收到请求后，如果有数据，那么就立即返回，否则线程进入等待状态，直到有数据到达或超时，浏览器收到响应后立即重新发送相同的请求。</p> </li> <li> <p>短轮询：服务端收到请求后无论是否有数据都立即返回，浏览器收到响应后间隔一段时间后重新发送相同的请求。</p> </li> </ul> <p>由于长轮询相比短轮询能够得到实时的响应，且更加节约资源，因此项目中我们考虑使用 ReentrantLock 来实现长轮询。轮询的目的是为了查看二维码状态的变化：</p> <pre><code class="language-java">@RequestMapping(path = "/getQrCodeStatus", method = RequestMethod.GET) @ResponseBody public Response getQrCodeStatus(@RequestParam String uuid, @RequestParam int currentStatus) throws InterruptedException {    JSONObject data = loginService.getQrCodeStatus(uuid, currentStatus);    return Response.createResponse(null, data); }</code></pre> <p>getQrCodeStatus 方法的主要逻辑如下：</p> <pre><code class="language-java">public JSONObject getQrCodeStatus(String uuid, int currentStatus) throws InterruptedException {    lock.lock();    try {       JSONObject data = new JSONObject();       String ticketKey = CommonUtil.buildTicketKey(uuid);       LoginTicket loginTicket = (LoginTicket) cacheStore.get(ticketKey);        QrCodeStatusEnum statusEnum = loginTicket == null || QrCodeStatusEnum.parse(loginTicket.getStatus()) == QrCodeStatusEnum.INVALID ?                QrCodeStatusEnum.INVALID : QrCodeStatusEnum.parse(loginTicket.getStatus());        if (currentStatus == statusEnum.getStatus()) {             Condition condition = CONDITION_CONTAINER.get(uuid);             if (condition == null) {                condition = lock.newCondition();                CONDITION_CONTAINER.put(uuid, condition);             }             condition.await(LoginConstant.POLL_WAIT_TIME, TimeUnit.SECONDS);       }       // 用户扫码后向 PC 端返回头像信息       if (statusEnum == QrCodeStatusEnum.SCANNED) {             User user = userService.getCurrentUser(loginTicket.getUserId());             data.put("avatar", user.getAvatar());       }        // 用户确认后为 PC 端生成 access_token       if (statusEnum == QrCodeStatusEnum.CONFIRMED) {             String accessToken = CommonUtil.generateUUID();             cacheStore.put(CommonUtil.buildAccessTokenKey(accessToken), loginTicket.getUserId(), LoginConstant.ACCESS_TOKEN_EXPIRE_TIME, TimeUnit.SECONDS);             data.put("access_token", accessToken);       }        data.put("status", statusEnum.getStatus());       data.put("message", statusEnum.getMessage());       return data;    } finally {       lock.unlock();    } }</code></pre> <p>该方法接收两个参数，即 uuid 和 currentStatus，其中 uuid 用于查询二维码，currentStatus 用于确认二维码状态是否发生了变化，如果是，那么需要立即向 PC 端反馈。我们规定 PC 端在轮询时，请求的参数中需要携带二维码当前的状态。</p> <ol> <li> <p>首先根据 uuid 查询出二维码的最新状态，并比较其是否与 currentStatus 相同。如果相同，那么当前线程进入阻塞状态，直到被唤醒或者超时。</p> </li> <li> <p>如果二维码状态为 "待确认"，那么服务端向 PC 端返回扫码用户的头像信息（处于 "待确认" 状态时，二维码已与用户信息绑定在一起，因此可以查询出用户的头像）。</p> </li> <li> <p>如果二维码状态为 "已确认"，那么服务端为 PC 端生成一个 token，在之后的请求中，PC 端可通过该 token 表明自己的身份。</p> </li> </ol> <p>上述代码中的加锁操作是为了能够令当前处理请求的线程进入阻塞状态，当二维码的状态发生变化时，我们再将其唤醒，因此上文中的扫码操作和确认登录操作完成后，还会有一个唤醒线程的过程。</p> <p>实际上，加锁操作设计得不太合理，因为我们只设置了一把锁。因此对不同二维码的查询或修改操作都会抢占同一把锁。按理来说，不同二维码的操作之间应该是相互独立的，即使加锁，也应该是为每个二维码均配一把锁，但这样做代码会更加复杂，或许有其它更好的实现长轮询的方式？或者干脆直接短轮询。当然，也可以使用 WebSocket 实现长连接。</p> <p><strong>7. 拦截器配置</strong></p> <p>项目中配置了两个拦截器，一个用于确认用户的身份，即验证 token 是否有效：</p> <pre><code class="language-java">@Component public class LoginInterceptor implements HandlerInterceptor {      @Autowired     private HostHolder hostHolder;      @Autowired     private CacheStore cacheStore;      @Autowired     private UserService userService;      @Override     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {          String accessToken = request.getHeader("access_token");         // access_token 存在         if (StringUtils.isNotEmpty(accessToken)) {             String userId = (String) cacheStore.get(CommonUtil.buildAccessTokenKey(accessToken));             User user = userService.getCurrentUser(userId);             hostHolder.setUser(user);         }         return true;     }      @Override     public void afterCompletion(HttpServletRequest request, HttpServletResponse response, Object handler, Exception ex) throws Exception {         hostHolder.clear();     } }</code></pre> <p>如果 token 有效，那么服务端根据 token 获取用户的信息，并将用户信息存储到 ThreadLocal 容器。手机端和 PC 端的请求都由该拦截器处理，如 PC 端的 "查询用户信息" 请求，手机端的 "扫码" 请求。由于我们忽略了手机端验证时所需要的的设备信息，因此 PC 端和手机端 token 可以使用同一套验证逻辑。</p> <p>另一个拦截器用于拦截 "确认登录" 请求，即验证一次性 token 是否有效：</p> <pre><code class="language-java">@Component public class ConfirmInterceptor implements HandlerInterceptor {      @Autowired     private CacheStore cacheStore;      @Override     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) {          String onceToken = request.getHeader("once_token");         if (StringUtils.isEmpty(onceToken)) {             return false;         }         if (StringUtils.isNoneEmpty(onceToken)) {             String onceTokenKey = CommonUtil.buildOnceTokenKey(onceToken);             String uuidFromCache = (String) cacheStore.get(onceTokenKey);             String uuidFromRequest = request.getParameter("uuid");             if (!StringUtils.equals(uuidFromCache, uuidFromRequest)) {                 throw new RuntimeException("非法的一次性 token");             }             // 一次性 token 检查完成后将其删除             cacheStore.delete(onceTokenKey);         }         return true;     } }</code></pre> <p>该拦截器主要拦截 "确认登录" 请求，需要注意的是，一次性 token 验证通过后要立即将其删除。</p> <blockquote> <p>编码过程中，我们简化了许多操作，例如：1. 忽略掉了手机端的设备信息；2. 手机端确认登录后并没有直接为用户生成 PC 端 token，而是在轮询时生成。</p> </blockquote> <h2 id="效果演示">效果演示</h2> <p><strong>1. 工具准备</strong></p> <ul> <li> <p>浏览器：PC 端操作</p> </li> <li> <p>Postman：模仿手机端操作。</p> </li> </ul> <p><strong>2. 数据准备</strong></p> <p>由于我们没有实现真实的手机端扫码的功能，因此使用 Postman 模仿手机端向服务端发送请求。首先我们需要确保服务端存储着用户的信息，即在 Test 类中执行如下代码：</p> <pre><code class="language-java">@Test void insertUser() {    User user = new User();    user.setUserId("1");    user.setUserName("John同学");    user.setAvatar("/avatar.jpg");    cacheStore.put("user:1", user); }</code></pre> <p>手机端发送请求时需要携带手机端 token，这里我们为 useId 为 "1" 的用户生成一个 token（手机端 token）：</p> <pre><code class="language-java">@Test void loginByPhone() {    String accessToken = CommonUtil.generateUUID();    System.out.println(accessToken);    cacheStore.put(CommonUtil.buildAccessTokenKey(accessToken), "1"); }</code></pre> <p>手机端 token（accessToken）为 "aae466837d0246d486f644a3bcfaa9e1"（随机值），之后发送 "扫码" 请求时需要携带这个 token。</p> <p><strong>3. 扫码登录流程展示</strong></p> <p>启动项目，访问<code>localhost:8080/index</code>：</p> <p><img decoding="async" src="http://img.555519.xyz/uploads3/20220509/cbee4e66c0558bff2eb70452724e2842.jpg" alt="Java 语言实现简易版扫码登录_在线工具"></p> <p>点击登录，并在开发者工具中找到二维码 id（uuid）：</p> <p><img decoding="async" src="http://img.555519.xyz/uploads3/20220509/474c7690b7cdde5dbbef33554185edbd.jpg" alt="Java 语言实现简易版扫码登录_在线工具"></p> <p>打开 Postman，发送<code>localhost:8080/login/scan</code> 请求，Query 参数中携带 uuid，Header 中携带手机端 token：</p> <p><img decoding="async" src="http://img.555519.xyz/uploads3/20220509/419bef8f5ceebc1f592855630a11ac46.jpg" alt="Java 语言实现简易版扫码登录_在线工具"></p> <p>上述请求返回 "扫码成功" 的响应，同时还返回了一次性 token。此时 PC 端显示出扫码用户的头像：</p> <p><img decoding="async" src="http://img.555519.xyz/uploads3/20220509/ed299f7f17de2dbbf1e18e5a491e4cbd.jpg" alt="Java 语言实现简易版扫码登录_在线工具"></p> <p>在 Postman 中发送<code>localhost:8080/login/confirm</code> 请求，Query 参数中携带 uuid，Header 中携带一次性 token：</p> <p><img decoding="async" src="http://img.555519.xyz/uploads3/20220509/e5176f27114a9924ab5e3ad6add1e7a9.jpg" alt="Java 语言实现简易版扫码登录_在线工具"></p> <p>"确认登录" 请求发送完成后，PC 端随即获取到 PC 端 token，并成功查询用户信息：</p> <p><img decoding="async" src="http://img.555519.xyz/uploads3/20220509/ea11e40074afece1f1372fe2d254ef46.jpg" alt="Java 语言实现简易版扫码登录_在线工具"></p> <p><strong>结语</strong></p> <p>本文主要介绍了扫码登录的原理，并实现了一个简易版扫码登录的 Demo。关于原理部分的理解错误以及代码中的不足之处欢迎大家批评指正（⌒.－），源码见<a href="http://www.m6000.cn/wp-content/themes/begin%20lts/inc/go.php?url=https://github.com/JavaerJohn/loginByQrCode"  target="_blank" rel="nofollow">扫码登录</a>，如果觉得有收获的话给个 Star 吧~。</p> <blockquote> <p>好文推荐：<br /> [1].<a href="http://www.m6000.cn/wp-content/themes/begin%20lts/inc/go.php?url=https://juejin.cn/post/6940976355097985032#heading-1"  target="_blank" rel="nofollow">https://juejin.cn/post/6940976355097985032#heading-1</a><br /> [2].<a href="http://www.m6000.cn/wp-content/themes/begin%20lts/inc/go.php?url=https://juejin.cn/post/6844904111398191117?utm_source=gold_browser_extension"  target="_blank" rel="nofollow">https://juejin.cn/post/6844904111398191117?utm_source=gold_browser_extension</a></p> </blockquote> 			                <div class="clearfix"></div>
+                <div class="col-md-12 mt-5">
+                                        <p>上一个：<a href="/news/article-87792.htm">C++逆向 可变参数Hook</a></p>
+                                        <p>下一个：<a href="/news/article-88533.htm">被猫抓伤怎么看需要不需要打针（被猫抓伤怎么看需要不需要打针了）</a></p>
+                                    </div>
+                                    </div>
+                    <div class="col-md-3">
+                        <div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">热门文章</h3>
+    </div>
+    <div class="panel-body">
+        <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
+                        <li class="py-2"><a href="/free-nodes/2025-4-5-free-subscribe-node.htm" title="2025年免费VPN | 4月5日21.6M/S|免费V2ray/Clash/SSR/Shadowrocket免费节点订阅分享">2025年免费VPN | 4月5日21.6M/S|免费V2ray/Clash/SSR/Shadowrocket免费节点订阅分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-3-18-free-node-subscribe.htm" title="2025年免费VPN | 3月18日18.5M/S|免费Clash/V2ray/Shadowrocket/SSR免费节点订阅分享">2025年免费VPN | 3月18日18.5M/S|免费Clash/V2ray/Shadowrocket/SSR免费节点订阅分享</a></li>
+                        <li class="py-2"><a href="/news/article-87090.htm" title="兽医资格证自考需要什么条件怎么报名（自学兽医考证）">兽医资格证自考需要什么条件怎么报名（自学兽医考证）</a></li>
+                        <li class="py-2"><a href="/news/article-66697.htm" title="大型饲料搅拌机五吨（大型饲料搅拌机五吨有多重）">大型饲料搅拌机五吨（大型饲料搅拌机五吨有多重）</a></li>
+                        <li class="py-2"><a href="/news/article-83495.htm" title="蓝牙耳机什么芯片比较好(蓝牙耳机什么芯片比较好用)">蓝牙耳机什么芯片比较好(蓝牙耳机什么芯片比较好用)</a></li>
+                        <li class="py-2"><a href="/news/article-79991.htm" title="动物医院前台装修风格图片（动物医院前台工作流程）">动物医院前台装修风格图片（动物医院前台工作流程）</a></li>
+                        <li class="py-2"><a href="/news/article-70557.htm" title="天津宠物领养机构名单整理（天津宠物猫领养中心）">天津宠物领养机构名单整理（天津宠物猫领养中心）</a></li>
+                        <li class="py-2"><a href="/news/article-87792.htm" title="C++逆向 可变参数Hook">C++逆向 可变参数Hook</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-3-5-node-share-links.htm" title="2025年免费VPN | 3月5日21.1M/S|免费V2ray/Shadowrocket/Clash/SSR免费节点订阅分享">2025年免费VPN | 3月5日21.1M/S|免费V2ray/Shadowrocket/Clash/SSR免费节点订阅分享</a></li>
+                        <li class="py-2"><a href="/news/article-82781.htm" title="国产最好的狗粮品牌排行榜（国产狗粮排名前十品牌）">国产最好的狗粮品牌排行榜（国产狗粮排名前十品牌）</a></li>
+                    </ul>
+    </div>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">归纳</h3>
+    </div>
+    <div class="panel-body">
+        <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
+                        <li class="py-2">
+                <h4><span class="badge" style="float: right;">15</span> <a href="/date/2025-04/" title="2025-04 归档">2025-04</a></h4>
+            </li>
+                        <li class="py-2">
+                <h4><span class="badge" style="float: right;">90</span> <a href="/date/2025-03/" title="2025-03 归档">2025-03</a></h4>
+            </li>
+                    </ul>
+    </div>
+</div>
+
+
+
+                    </div>
+                </div>
+            </div> <!-- .container -->
+        </div> <!-- .page-section -->
+    </main>
+        <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 py-2">
+                    <p id="copyright">
+                                            <p>
+                                                <a href="/">首页</a> |
+                                                <a href="/free-nodes/">免费节点</a> |
+                                                <a href="/paid-subscribe/">推荐机场</a> |
+                                                <a href="/news/">新闻资讯</a> |
+                                                <a href="/client.htm">客户端</a> |
+                                                <a href="/about-us.htm">关于我们</a> |
+                        <a href="/disclaimer.htm">免责申明</a> |
+                        <a href="/privacy.htm">隐私申明</a> |
+                        <a href="/sitemap.xml">网站地图</a>
+                    </p>
+                        2025年最新免费VPN 机场订阅节点官网 版权所有 Powered by WordPress
+                    </p>
+                </div>
+                <div class="col-sm-6 py-2 text-right">
+                    <div class="d-inline-block px-3">
+                        <a href="#">Privacy</a>
+                    </div>
+                    <div class="d-inline-block px-3">
+                        <a href="#">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- .container -->
+    </footer> <!-- .page-footer -->
+    <script src="/assets/website/js/frontend/windowsv2ray/jquery-3.5.1.min.js"></script>
+    <script src="/assets/website/js/frontend/windowsv2ray/bootstrap.bundle.min.js"></script>
+    <script src="/assets/website/js/frontend/windowsv2ray/wow/wow.min.js"></script>
+    <script src="/assets/website/js/frontend/windowsv2ray/owl-carousel/js/owl.carousel.min.js"></script>
+    <script src="/assets/website/js/frontend/windowsv2ray/waypoints/jquery.waypoints.min.js"></script>
+    <script src="/assets/website/js/frontend/windowsv2ray/animateNumber/jquery.animateNumber.min.js"></script>
+    <script src="/assets/website/js/frontend/windowsv2ray/theme.js"></script>
+    <script src="https://www.freeclashnode.com/assets/js/frontend/invite-url.js"></script>
+    <script src="/assets/website/js/frontend/G.js"></script>
+</body>
+
+</html>
