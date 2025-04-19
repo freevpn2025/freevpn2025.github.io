@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html xml:lang="zh-CN" lang="zh-CN">
+
+<head>
+        <link rel="canonical" href="https://freevpn2025.github.io/news/article-99644.htm" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>java 获取泛型t的class Java泛型 | Jackson TypeReference获取泛型类型信息</title>
+        <meta name="description" content="前言 Jackson是一个比较流行的Json序列化和反序列化框架。本文以Jackson为例介绍TypeReference实现涉及泛型的反序列化，及TypeReference的实现原理。对于获取泛型类型" />
+        <link rel="icon" href="/assets/website/img/windowsv2ray/favicon.ico" type="image/x-icon"/>
+
+    <meta name="author" content="2025年最新免费VPN 机场订阅节点官网">
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://freevpn2025.github.io/news/article-99644.htm" />
+    <meta property="og:site_name" content="2025年最新免费VPN 机场订阅节点官网" />
+    <meta property="og:title" content="java 获取泛型t的class Java泛型 | Jackson TypeReference获取泛型类型信息" />
+    <meta property="og:image" content="https://freevpn2025.github.io/uploads/20240604/c331bc272a0d17d26f050fa999d8a472.webp" />
+        <meta property="og:release_date" content="2025-04-19T08:59:00" />
+    <meta property="og:updated_time" content="2025-04-19T08:59:00" />
+        <meta property="og:description" content="前言 Jackson是一个比较流行的Json序列化和反序列化框架。本文以Jackson为例介绍TypeReference实现涉及泛型的反序列化，及TypeReference的实现原理。对于获取泛型类型" />
+        
+    <meta name="applicable-device" content="pc,mobile" />
+    <meta name="renderer" content="webkit" />
+    <meta name="force-rendering" content="webkit" />
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta name="robots" content="max-image-preview:large" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="java 获取泛型t的class Java泛型 | Jackson TypeReference获取泛型类型信息">
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="dns-prefetch" href="https:/www.googletagmanager.com">
+    <link rel="dns-prefetch" href="https://www.googleadservices.com">
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+    <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com">
+    <link rel="dns-prefetch" href="https://cm.g.doubleclick.net">
+    
+    <link rel="stylesheet" href="/assets/website/js/frontend/windowsv2ray/animate/animate.css">
+    <link rel="stylesheet" href="/assets/website/css/windowsv2ray/bootstrap.css">
+    <link rel="stylesheet" href="/assets/website/css/windowsv2ray/maicons.css">
+    <link rel="stylesheet" href="/assets/website/js/frontend/windowsv2ray/owl-carousel/css/owl.carousel.css">
+    <link rel="stylesheet" href="/assets/website/css/windowsv2ray/theme.css">
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3H18VFXW21"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-3H18VFXW21');
+</script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3332997411212854"
+     crossorigin="anonymous"></script>
+</head>
+
+<body data-page="detail">
+    <!-- Back to top button -->
+    <div class="back-to-top"></div>
+    <header>
+                <nav class="navbar navbar-expand-lg navbar-light navbar-float">
+            <div class="container">
+                <a href="/" class="navbar-brand">
+                                <span>2025年最新免费VPN</span>
+                                </a>
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse" id="navbarContent">
+                    <ul class="navbar-nav ml-lg-4 pt-3 pt-lg-0">
+                                                <li class="nav-item">
+                            <a href="/" class="nav-link">首页</a>
+                        </li>
+                                                <li class="nav-item">
+                            <a href="/free-nodes/" class="nav-link">免费节点</a>
+                        </li>
+                                                <li class="nav-item">
+                            <a href="/paid-subscribe/" class="nav-link">推荐机场</a>
+                        </li>
+                                                <li class="nav-item">
+                            <a href="/news/" class="nav-link">新闻资讯</a>
+                        </li>
+                                                <li class="nav-item">
+                            <a href="/client.htm" class="nav-link">客户端</a>
+                        </li>
+                                            </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container mt-5">
+            <div class="page-banner">
+                <div class="row justify-content-center align-items-center h-100">
+                    <div class="col-md-10">
+                        <h1 class="text-center">java 获取泛型t的class Java泛型 | Jackson TypeReference获取泛型类型信息</h1>
+                        <nav aria-label="Breadcrumb">
+                            <ul class="breadcrumb justify-content-center py-0 bg-transparent">
+                                <li class="breadcrumb-item"><a href="/">首页</a></li>
+                                <li class="breadcrumb-item"><a href="/news/">新闻资讯</a></li>
+                                <li class="breadcrumb-item active">正文</li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="page-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9">
+                                        <input type="hidden" id="share-website-info" data-name="Clash Meta免费节点订阅站" data-url="https://clash-meta.github.io">
+                  				  				  				<div id="content_views" class="htmledit_views"> <div> <h2>前言</h2> <p>Jackson是一个比较流行的Json序列化和反序列化框架。本文以Jackson为例介绍TypeReference实现涉及泛型的反序列化，及TypeReference的实现原理。对于获取泛型类型信息的场景，TypeReference是一个可以参考的通用解决方案。</p> <h2>实例</h2> <p>Jackson ObjectMapper的readValue可以将Json字符串反序列化为Java对象。如下例中将<code>[{"id":null,"name":" ","age":500,"gender":false,"email":"email","employed":true,"salary":10}]</code>反序列化为<code>List&lt;UserResource&gt;</code>类型。</p> <p>Json字符串：</p> <div class="has"> <pre class="has"><code>[{<!-- -->     "id": null,     "name": " ",     "age": 500,     "gender": false,     "email": "email",     "employed": true,     "salary": 10 }]</code></pre> </div> <p>UserResource实体类：</p> <div class="has"> <pre class="has"><code>@Builder @Data @NoArgsConstructor @AllArgsConstructor public class UserResource {<!-- -->     private UUID id;     private String name;     private int age;     private boolean gender;     private String email;     private boolean employed;     private BigDecimal salary; }</code></pre> </div> <h2>实现</h2> <h3>理想的实现方式</h3> <p>理想的实现方式是告诉<code>ObjectMapper</code>的<code>readValue</code>方法，我要的是<code>List&lt;UserResource&gt;</code>，帮我反序列化成这个类型。</p> <div class="has"> <pre class="has"><code>List&lt;UserResource&gt; list = new ObjectMapper().readValue(userResourcesStr, List&lt;UserResource&gt;.class);</code></pre> </div> <p>现实是编译器告诉你这不行，<code>Cannot select from parameterized type</code>. 也很好理解，Java编译器认为List是Class，而List则不是。</p> <h3>换一种方式实现</h3> <p>既然不能用<code>List&lt;UserResource&gt;.class</code>, 那如果我告诉<code>ObjectMapper</code>的<code>readValue</code>方法，我要的是<code>List</code>类型，但返回值类型是<code>List&lt;UserResource&gt;</code>, 会发生什么呢？</p> <div class="has"> <pre class="has"><code>List&lt;UserResource&gt; list = new ObjectMapper().readValue(userResourcesStr, List.class);</code></pre> </div> <p>这时候倒没有编译错误, 但是会有警告：<code>Unchecked assignment: 'java.util.List' to 'java.util.List&lt;UserResource&gt;'</code>, 显然ObjectMapper并不能反序列化为UserResource类型，而是LinkedHashMap类型。如下图所示：</p> <div style="text-align:center;"><img decoding="async" src="http://img.555519.xyz/uploads3/20220723/22145bf61acfc647008d84718d9754c2.jpg" alt="java 获取泛型t的class Java泛型 | Jackson TypeReference获取泛型类型信息"></div> <h3>TypeReference的实现方式</h3> <p>ObjectMapper提供了<code>readValue(String content, TypeReference valueTypeRef)</code>接口，第二个参数为new一个<code>TypeReference</code>的子类实例：<code>new TypeReference&lt;List&lt;UserResource&gt;&gt;(){}</code>。泛型抽象类TypeReference用于通过子类获取完整的泛型类型信息。</p> <div class="has"> <pre class="has"><code>public &lt;T&gt; T readValue(String content, TypeReference valueTypeRef) List&lt;UserResource&gt; list = new ObjectMapper().readValue(userResourcesStr, new TypeReference&lt;List&lt;UserResource&gt;&gt;(){});</code></pre> </div> <div style="text-align:center;"><img decoding="async" src="http://img.555519.xyz/uploads3/20220723/8c3360e3f89d6a1cd09536cf8c7882f5.jpg" alt="java 获取泛型t的class Java泛型 | Jackson TypeReference获取泛型类型信息"></div> <h2>TypeReference 实现原理</h2> <p>上例中<code>new TypeReference&lt;List&lt;UserResource&gt;&gt;(){}</code>子类的实例，<code>TypeReference</code>源码部分比较简单，主要逻辑是，通过<code>getClass().getGenericSuperclass()</code>获取父类中的参数化类型（ParameterizedType）：</p> <p>TypeReference主要源码：</p> <div class="has"> <pre class="has"><code>protected TypeReference()     {<!-- -->         Type superClass = getClass().getGenericSuperclass();         _type = ((ParameterizedType) superClass).getActualTypeArguments()[0];     }</code></pre> </div> <p>getGenericSuperclass返回一个Type类型的对象，代表实体（class, interface, primitive type or void）的直接父类，如果父类是参数化类型，则返回的Type对象可准确反映源代码中使用的实际type参数。</p> <p>Class的genericInfo：</p> <div style="text-align:center;"><img decoding="async" src="http://img.555519.xyz/uploads3/20220723/4aaf69888bb19558a70b742f982169ea.jpg" alt="java 获取泛型t的class Java泛型 | Jackson TypeReference获取泛型类型信息"></div> <h2>总结</h2> <ul> <li>Jackson ObjectMapper 提供了TypeReference支持对泛型对象的反序列化；</li> <li>对于获取泛型类型信息的场景，TypeReference是一个可以参考的通用解决方案。</li> </ul> </div> </div> 			                <div class="clearfix"></div>
+                <div class="col-md-12 mt-5">
+                                        <p>上一个：<a href="/news/article-98842.htm">宠福鑫动物医院怎么样啊 宠福鑫动物医院怎么样啊知乎</a></p>
+                                        <p>下一个：<a href="/news/article-99645.htm">动物医院有宠物卖吗知乎 动物医院有宠物卖吗知乎</a></p>
+                                    </div>
+                                    </div>
+                    <div class="col-md-3">
+                        <div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">热门文章</h3>
+    </div>
+    <div class="panel-body">
+        <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
+                        <li class="py-2"><a href="/free-nodes/2025-4-16-free-high-speed-nodes.htm" title="2025年免费VPN | 4月16日23M/S|免费V2ray/SSR/Shadowrocket/Clash免费节点订阅分享">2025年免费VPN | 4月16日23M/S|免费V2ray/SSR/Shadowrocket/Clash免费节点订阅分享</a></li>
+                        <li class="py-2"><a href="/news/article-66059.htm" title="上海宠物领养日期查询网（上海宠物领养网站）">上海宠物领养日期查询网（上海宠物领养网站）</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-3-6-free-node-subscribe-links.htm" title="2025年免费VPN | 3月6日21.6M/S|免费V2ray/Shadowrocket/SSR/Clash免费节点订阅分享">2025年免费VPN | 3月6日21.6M/S|免费V2ray/Shadowrocket/SSR/Clash免费节点订阅分享</a></li>
+                        <li class="py-2"><a href="/news/article-77244.htm" title="成都宠物狗领养吧地址（成都宠物犬领养）">成都宠物狗领养吧地址（成都宠物犬领养）</a></li>
+                        <li class="py-2"><a href="/news/article-73192.htm" title="动物医院需要几个兽医资格证才能开药店呢 动物医院需要几个兽医资格证才能开药店呢">动物医院需要几个兽医资格证才能开药店呢 动物医院需要几个兽医资格证才能开药店呢</a></li>
+                        <li class="py-2"><a href="/news/article-83494.htm" title="win11系统打不开显卡控制面板怎么解决">win11系统打不开显卡控制面板怎么解决</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-4-19-node-share-links.htm" title="2025年免费VPN | 4月19日19.8M/S|免费SSR/Clash/Shadowrocket/V2ray免费节点订阅分享">2025年免费VPN | 4月19日19.8M/S|免费SSR/Clash/Shadowrocket/V2ray免费节点订阅分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-4-7-node-share.htm" title="2025年免费VPN | 4月7日19.1M/S|免费Shadowrocket/V2ray/Clash/SSR免费节点订阅分享">2025年免费VPN | 4月7日19.1M/S|免费Shadowrocket/V2ray/Clash/SSR免费节点订阅分享</a></li>
+                        <li class="py-2"><a href="/news/article-95223.htm" title="动物医院上班日志（动物医院上班日志范文）">动物医院上班日志（动物医院上班日志范文）</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-4-4-free-node-subscribe-links.htm" title="2025年免费VPN | 4月4日18.4M/S|免费Clash/SSR/V2ray/Shadowrocket免费节点订阅分享">2025年免费VPN | 4月4日18.4M/S|免费Clash/SSR/V2ray/Shadowrocket免费节点订阅分享</a></li>
+                    </ul>
+    </div>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">归纳</h3>
+    </div>
+    <div class="panel-body">
+        <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
+                        <li class="py-2">
+                <h4><span class="badge" style="float: right;">57</span> <a href="/date/2025-04/" title="2025-04 归档">2025-04</a></h4>
+            </li>
+                        <li class="py-2">
+                <h4><span class="badge" style="float: right;">90</span> <a href="/date/2025-03/" title="2025-03 归档">2025-03</a></h4>
+            </li>
+                    </ul>
+    </div>
+</div>
+
+
+
+                    </div>
+                </div>
+            </div> <!-- .container -->
+        </div> <!-- .page-section -->
+    </main>
+        <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 py-2">
+                    <p id="copyright">
+                                            <p>
+                                                <a href="/">首页</a> |
+                                                <a href="/free-nodes/">免费节点</a> |
+                                                <a href="/paid-subscribe/">推荐机场</a> |
+                                                <a href="/news/">新闻资讯</a> |
+                                                <a href="/client.htm">客户端</a> |
+                                                <a href="/about-us.htm">关于我们</a> |
+                        <a href="/disclaimer.htm">免责申明</a> |
+                        <a href="/privacy.htm">隐私申明</a> |
+                        <a href="/sitemap.xml">网站地图</a>
+                    </p>
+                        2025年最新免费VPN 机场订阅节点官网 版权所有 Powered by WordPress
+                    </p>
+                </div>
+                <div class="col-sm-6 py-2 text-right">
+                    <div class="d-inline-block px-3">
+                        <a href="#">Privacy</a>
+                    </div>
+                    <div class="d-inline-block px-3">
+                        <a href="#">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- .container -->
+    </footer> <!-- .page-footer -->
+    <script src="/assets/website/js/frontend/windowsv2ray/jquery-3.5.1.min.js"></script>
+    <script src="/assets/website/js/frontend/windowsv2ray/bootstrap.bundle.min.js"></script>
+    <script src="/assets/website/js/frontend/windowsv2ray/wow/wow.min.js"></script>
+    <script src="/assets/website/js/frontend/windowsv2ray/owl-carousel/js/owl.carousel.min.js"></script>
+    <script src="/assets/website/js/frontend/windowsv2ray/waypoints/jquery.waypoints.min.js"></script>
+    <script src="/assets/website/js/frontend/windowsv2ray/animateNumber/jquery.animateNumber.min.js"></script>
+    <script src="/assets/website/js/frontend/windowsv2ray/theme.js"></script>
+    <script src="https://www.freeclashnode.com/assets/js/frontend/invite-url.js"></script>
+    <script src="/assets/website/js/frontend/G.js"></script>
+</body>
+
+</html>
