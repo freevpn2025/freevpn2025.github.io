@@ -1,4 +1,4 @@
-# 2025年免费VPN | 11月4日21.1M/S|免费V2ray节点/Singbox节点/Shadowrocket节点/Clash节点/SSR节点免费节点订阅分享  更新时间 2025-11-04 10:09:17
+# 2025年免费VPN | 11月10日18.1M/S|免费Singbox节点/Shadowrocket节点/V2ray节点/SSR节点/Clash节点免费节点订阅分享  更新时间 2025-11-10 09:10:52
 所有免费clash节点都爬取自网络，请勿用于非法用途 。节点地址：<a href="https://freevpn2025.github.io" target="_blank">点击跳转</a>
 
 ## clash使用教程：
@@ -9,23 +9,23 @@
 
 ### 免费Clash节点订阅链接
 
-- https://freevpn2025.github.io/uploads/2025/11/0-20251104.yaml
-- https://freevpn2025.github.io/uploads/2025/11/1-20251104.yaml
-- https://freevpn2025.github.io/uploads/2025/11/2-20251104.yaml
-- https://freevpn2025.github.io/uploads/2025/11/3-20251104.yaml
-- https://freevpn2025.github.io/uploads/2025/11/4-20251104.yaml
+- https://freevpn2025.github.io/uploads/2025/11/0-20251110.yaml
+- https://freevpn2025.github.io/uploads/2025/11/1-20251110.yaml
+- https://freevpn2025.github.io/uploads/2025/11/2-20251110.yaml
+- https://freevpn2025.github.io/uploads/2025/11/3-20251110.yaml
+- https://freevpn2025.github.io/uploads/2025/11/4-20251110.yaml
 
 ### 免费V2ray节点订阅链接
 
-- https://freevpn2025.github.io/uploads/2025/11/0-20251104.txt
-- https://freevpn2025.github.io/uploads/2025/11/1-20251104.txt
-- https://freevpn2025.github.io/uploads/2025/11/2-20251104.txt
-- https://freevpn2025.github.io/uploads/2025/11/3-20251104.txt
-- https://freevpn2025.github.io/uploads/2025/11/4-20251104.txt
+- https://freevpn2025.github.io/uploads/2025/11/0-20251110.txt
+- https://freevpn2025.github.io/uploads/2025/11/1-20251110.txt
+- https://freevpn2025.github.io/uploads/2025/11/2-20251110.txt
+- https://freevpn2025.github.io/uploads/2025/11/3-20251110.txt
+- https://freevpn2025.github.io/uploads/2025/11/4-20251110.txt
 
 ### 免费Sing-box节点订阅链接
 
-- https://freevpn2025.github.io/uploads/2025/11/20251104.json
+- https://freevpn2025.github.io/uploads/2025/11/20251110.json
 
 ## 更多Clash节点订阅 ：
 
